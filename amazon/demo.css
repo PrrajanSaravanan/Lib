@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #030b26;
+    height: 60px;
+    width: 100vw;
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+}
+
+.navlogo {
+    height: 60px;
+    width: 113px;
+}
+
+.logo {
+    background-image: url("amazon_logo.png");
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+}
+
+.border:hover {
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.up {
+    color: #CCCCCC;
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+.down {
+    color: #FFFFFF;
+    font-size: 17px;
+    margin-left: 5px;
+}
+
+.add-icon {
+    display: flex;
+    align-items: center;
+}
+
+.nav-address {
+    padding-top: 10px;
+    width: 95px;
+}
+
+.nav-search {
+    display: flex;
+    width: 800px;
+    height: 50px;
+    margin-top: 5px;
+    border-radius: 4px;
+    justify-content: space-evenly;
+    background-color: aqua;
+}
+
+.select-box {
+    background-color: #e6e6e6;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+}
+
+.search-input {
+    width: 100%;
+    border: none;
+}
+
+.search-icon {
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    background-color: #febd68;
+    color: black;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    width: 90px;
+}
+
+.flag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    width: 300px;
+}
+
+
+.up1 {
+    font-size: 12px;
+    color: #CCCCCC;
+}
+
+.down1 {
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.nav-sign-in {
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.nav-returns {
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100px;
+}
+
+.nav-cart {
+    display: flex;
+    align-items: center;
+    width: 100px;
+}
+
+.nav-icon {
+    font-size: 25px;
+}
+
+.panel {
+    display: flex;
+    height: 39px;
+    background-color: #222f3d;
+    color: white;
+}
+
+.panel-ops {
+    display: flex;
+    width: 1150px;
+    margin-left: 20px;
+    align-items: center;
+}
+
+.panel-ops p {
+    margin-left: 20px;
+}
+
+.panel-all {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+#exc {
+    margin-left: 0px;
+}
+
+.hero-section {
+    background-image: url("hero.jpg");
+    height: 350px;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-message {
+    background-color: white;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    width: 98%;
+    position: absolute;
+    bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #007185;
+}
+
+.shop-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 500px;
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-top: 10px;
+    background: linear-gradient(to bottom, #80024c, white);
+}
+
+.box {
+    border: 1px solid black;
+    height: 400px;
+    width: 23%;
+    background-color: white;
+    margin-bottom: 25px;
+}
+
+.box-img {
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distributes space evenly between items */
+    gap: 10px; /* Adds spacing between items */
+}
+
+.img-container {
+    display: flex;
+    flex-direction: column; /* Stacks image and text vertically */
+    align-items: center; /* Centers items horizontally */
+    text-align: center; /* Centers text */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.img-container img {
+    width: 110px; /* Sets image width */
+    height: 100px; /* Sets image height */
+    object-fit: cover; /* Ensures images maintain aspect ratio */
+}
+
+.img-container p {
+    font-size: 14px; /* Sets text size */
+    margin-top: 10px; /* Adds spacing between image and text */
+}
+
+h2{
+    font-size: 21px;
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+
+.img-link{
+   padding-left: 20px;
+   padding-top: 20px;
+}
+
+.left{
+    padding-left:20px;
+}
+
+.right{
+    padding-right: 20px;
+}
+
+.back-to-top{
+    background-color: #37475a;
+    color: white;
+    height: 49px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-to-top:hover{
+    background-color: #475465;
+}
+
+.know{
+    background-color: #222f3d;
+    height: 350px;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-top: 30px;
+    border-bottom: 1px solid white;
+}
+
+ul{
+    padding-top: 20px;
+}
+
+ul p{
+   font-weight: bold;
+}
+
+ul a{
+    color: #CCCCCC;
+    display: block;
+    padding-top: 8px;
+}
+
+.foot-3{
+    display: flex;
+    height: 75px;
+    background-color: #222f3d;
+    justify-content: space-evenly;
+    font-size: 13px;
+}
+
+.foot-3 img{
+    height: 57px;
+    width: 97px;
+    margin-top: 12px;
+    margin-left: 170px;
+}
+
+.foot-buttons {
+    display: flex;
+    align-items: center; /* Align buttons vertically in the middle */
+    justify-content: space-evenly;/* Space buttons evenly */
+    margin-left: 30px;
+}
+
+.button {
+    display: flex;
+    height: 35px; /* Set the height to 15px */
+    padding: 10px 15px; /* Adjust padding to center the content vertically */
+    color: white;
+    border: 1px solid white;
+    align-items: center; /* Center the content vertically */
+/* Center the content horizontally */
+    margin: 0 5px; /* Add some margin between buttons */
+}
+
+.button-3 img{
+    height: 20px;
+    width: 40px ;
+    padding-right: 5px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.button-1 p{
+    margin-left: 10px;
+}
+
+.button-1{
+    padding-left: 10px;
+}
+
+.main-foot3{
+    display: flex;
+    width: 900px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.button-3{
+    width: 140px;
+}
+
+.button p{
+    padding-right: 10px;
+}
+
+.foot-4{
+    height: 50px;
+    background-color: #212b2b;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+}
+
+.panel-1{
+    display: flex;
+    justify-content: center;
+}
+.panel-1 p{
+    padding-left: 5px;
+    padding-right: 8px;
+}
+
+.panel-1 p:hover{
+    text-decoration: underline;
+}
+
+
