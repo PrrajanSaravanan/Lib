@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .booking-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .error {
+            color: red;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="booking-container">
+    <h1>Book Your Service</h1>
+    <form id="bookingForm">
+        <!-- Name Field -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+        <div id="nameError" class="error"></div>
+
+        <!-- Email Field -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <div id="emailError" class="error"></div>
+
+        <!-- Service Type Dropdown -->
+        <label for="service">Select Service:</label>
+        <select id="service" name="service" required>
+            <option value="">Select...</option>
+            <option value="Web Development">Web Development</option>
+            <option value="SEO Services">SEO Services</option>
+            <option value="Consulting">Consulting</option>
+        </select>
+        <div id="serviceError" class="error"></div>
+
+        <!-- Date Field -->
+        <label for="date">Preferred Date:</label>
+        <input type="date" id="date" name="date" required>
+        <div id="dateError" class="error"></div>
+
+        <!-- Submit Button -->
+        <button type="submit">Book Now</button>
+    </form>
+</div>
+
+<script>
+    document.getElementById("bookingForm").addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        // Clear previous errors
+        document.getElementById("nameError").textContent = "";
+        document.getElementById("emailError").textContent = "";
+        document.getElementById("serviceError").textContent = "";
+        document.getElementById("dateError").textContent = "";
+
+        let isValid = true;
+
+        // Get form values
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const service = document.getElementById("service").value;
+        const date = document.getElementById("date").value;
+
+        // Validate Name
+        if (name === '') {
+            document.getElementById("nameError").textContent = "Name is required.";
+            isValid = false;
+        }
+
+        // Validate Email
+        const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+        if (!email.match(emailPattern)) {
+            document.getElementById("emailError").textContent = "Please enter a valid email address.";
+            isValid = false;
+        }
+
+        // Validate Service Selection
+        if (service === '') {
+            document.getElementById("serviceError").textContent = "Please select a service.";
+            isValid = false;
+        }
+
+        // Validate Date
+        if (date === '') {
+            document.getElementById("dateError").textContent = "Please select a date.";
+            isValid = false;
+        }
+
+        // If form is valid, show success message
+        if (isValid) {
+            alert("Booking successful!");
+            // You can also submit the form or send data to a server here.
+        }
+    });
+</script>
+
+</body>
+</html>

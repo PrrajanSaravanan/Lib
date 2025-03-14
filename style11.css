@@ -1,0 +1,34 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav{
+    background-color: rgb(209, 135, 135);
+    color: aliceblue;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0px;
+    padding: 5px;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav a{
+    padding: 5px;
+    color: aliceblue;
+    text-decoration: none;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+nav a:hover{
+    background-color: black;
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
